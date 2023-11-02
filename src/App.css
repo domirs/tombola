@@ -37,7 +37,7 @@
 }
 
 .current .number {
-  font-size: 60px;
+  font-size: 140px;
   font-weight: bold;
 }
 
@@ -47,7 +47,7 @@
   margin: 0;
   grid-area: list;
   text-align: right;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .list li {
