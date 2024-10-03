@@ -2,7 +2,9 @@ import { useState } from "react";
 import "./App.css";
 
 const year = new Date().getFullYear();
-const maxNumber = (new URLSearchParams(window.location.search).get('max') || '2200') * 1;
+const maxNumber = parseInt(
+  new URLSearchParams(window.location.search).get("max") || "2200"
+);
 
 const App = () => {
   const [numbers, setNumbers] = useState<number[]>([]);
