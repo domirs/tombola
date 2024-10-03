@@ -1,11 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 
+const year = new Date().getFullYear();
+const maxNumber = (new URLSearchParams(window.location.search).get('max') || '2200') * 1;
+
 const App = () => {
   const [numbers, setNumbers] = useState<number[]>([]);
 
   const clickHandler = () => {
-    const rnd = Math.round(Math.random() * 2200);
+    const rnd = Math.round(Math.random() * maxNumber);
 
     if (numbers.includes(rnd) || rnd === 0) {
       clickHandler();
@@ -16,7 +19,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Tombola 2023</h1>
+      <h1 className="title">Tombola {year}</h1>
       <div className="current">
         <button onClick={clickHandler}>Ziehen</button>
 
