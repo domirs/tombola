@@ -28,8 +28,8 @@ const App = () => {
         <div className="number">{numbers[0]}</div>
       </div>
       <ul className="list">
-        {numbers.map((n) => (
-          <li key={n}>{n}</li>
+        {numbers.map((n, i) => (
+          <li key={n}>{i+1}. {n}</li>
         ))}
       </ul>
     </div>
