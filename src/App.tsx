@@ -19,7 +19,7 @@ const App = () => {
     }
   };
 
-  const length = number.length;
+  const length = numbers.length;
   
   return (
     <div className="container">
