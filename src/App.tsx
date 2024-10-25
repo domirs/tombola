@@ -31,7 +31,7 @@ const App = () => {
       </div>
       <ul className="list">
         {numbers.map((n, i) => (
-          <li key={n}>{length - i}. {n}</li>
+          <li key={n}><span className="smaller">{length - i}.</span> <b>{n}</b></li>
         ))}
       </ul>
     </div>

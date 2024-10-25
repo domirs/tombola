@@ -53,3 +53,7 @@
 .list li {
   margin-bottom: 10px;
 }
+
+.smaller {
+  font-size: 50px;
+}
