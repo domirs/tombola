@@ -19,6 +19,8 @@ const App = () => {
     }
   };
 
+  const length = number.length;
+  
   return (
     <div className="container">
       <h1 className="title">Tombola {year}</h1>
@@ -29,7 +31,7 @@ const App = () => {
       </div>
       <ul className="list">
         {numbers.map((n, i) => (
-          <li key={n}>{i+1}. {n}</li>
+          <li key={n}>{length - i}. {n}</li>
         ))}
       </ul>
     </div>
